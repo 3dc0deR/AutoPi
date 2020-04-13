@@ -3,7 +3,7 @@ Description=ngrok
 After=network.target
 
 [Service]
-ExecStart=/home/pi/ngrok tcp 22
+ExecStart=/home/pi/ngrok tcp 22 #The port 22 can be replaced by any other port as well if you want to expose any other service
 ExecReload=/bin/kill -HUP $MAINPID
 KillMode=process
 IgnoreSIGPIPE=true
