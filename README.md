@@ -28,7 +28,7 @@ After setting up Ngrok, two startup services are created. One for autostarting N
 
     systemctl enable ngrok.service
     
-6. Modify the script notifier.py and place it in the home directory. Mailgun API has been used to send emails. You would need to create a mailgun account and get the API key and put it in script accordingly. The values that need to be replaced in the script are: [your api key here], [your mailgun domain name here],[your email address here]. Put them in without the [ ] brackets.
+6. Modify the script notifier.py and place it in the home directory. Mailgun API has been used to send emails. You would need to create a mailgun account and get the API key and put it in script accordingly. The values that need to be replaced in the script are: [your api key here], [your mailgun domain name here], [your email address here]. Put them in without the [ ] brackets.
 
 7. Create a job to autostart notifier service on boot. For this copy the file ngroknotifier.service to /lib/systemd/system/ngroknotifer.service.
 
