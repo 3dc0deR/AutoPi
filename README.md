@@ -1,7 +1,9 @@
 # AutoPi
 
-This project can be used to expose your Raspberry Pi to the internet via SSH and automatically get an email notification of the Public address of Raspberry Pi. This is very useful when the Pi has been deployed in a remote location for some IoT project or is simply sitting at your home. All you need to do is power is up and you will get an email with an address to which you can SSH to. 
+This project can be used to expose your Raspberry Pi to the internet via SSH and automatically get an email notification of the Public address of Raspberry Pi. This is very useful when the Pi has been deployed in a remote location for some IoT project or is simply sitting at your home. All you need to do is power is up and you will get an email with an address to which you can SSH to.
+
 Ngrok is used which relays the traffic from its public address to the Raspberry Pi. This can be used behind a NAT or even when your Raspberry Pi is connected to say a mobile hotspot.
+
 The Ngrok service once started provides you with a public address which you can use to connect to the Raspberry Pi over the internet. Make sure to change your default login credentials before exposing Raspberry Pi to the internet.
 
 After setting up Ngrok, two startup services are created. One for autostarting Ngrok, and another for emailing you the public Ngrok address.
@@ -13,6 +15,7 @@ After setting up Ngrok, two startup services are created. One for autostarting N
 2. Download Ngrok to your home directory of Raspberry pi & Unzip:
 
     wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+    
     unzip ngrok-stable-linux-arm.zip 
     
 3. Connect Ngrok to your account. Go to your account and copy the authtoken from the dashboard and add it with:
